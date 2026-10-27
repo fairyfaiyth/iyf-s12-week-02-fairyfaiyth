@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Daily Challenges</title>
+  <style>
+    body { padding: 20px; }
+    section { margin-bottom: 40px; }
+
+    /* Day 1: Button styles */
+    .btn {
+      padding: 10px 20px;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: var(--font-base);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-primary { background: var(--color-primary); color: white; }
+    .btn-primary:hover { background: var(--color-primary-dark); }
+
+    .btn-secondary { background: transparent; color: var(--color-primary); border-color: var(--color-primary); }
+    .btn-secondary:hover { background: var(--color-primary); color: white; }
+
+    .btn-danger { background: #d32f2f; color: white; }
+    .btn-danger:hover { background: #a62020; }
+
+    .btn-disabled { background: #cccccc; color: #666666; cursor: not-allowed; }
+    .btn-disabled:hover { transform: none; box-shadow: none; background: #cccccc; }
+  </style>
+</head>
+<body>
+  <h1>Daily Challenges</h1>
+
+  <section>
+    <h2>Day 1: Button Styles</h2>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-disabled" disabled>Disabled</button>
+  </section>
+</body>
+</html>
