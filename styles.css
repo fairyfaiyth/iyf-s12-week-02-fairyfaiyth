@@ -16,6 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     font-weight: 700;
+}
 /* Task 3.2: Box Model Card Layout */
 .profile-card {
     max-width: 500px;
@@ -23,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
     border: 2px solid forestgreen;
 }
-}/* Task 3.3: Custom Properties & Selectors */
+/* Task 3.3: Custom Properties & Selectors */
 :root {
     --primary-color: forestgreen;
     --text-color: black;
