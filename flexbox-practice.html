@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Practice</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; padding: 20px; }
+    h2 { margin: 30px 0 10px; }
+
+    /* Exercise 1: navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #145a14;
+      color: white;
+    }
+    .navbar ul { display: flex; gap: 20px; list-style: none; }
+    .navbar a { color: white; text-decoration: none; }
+
+    /* Exercise 2: card row */
+    .card-row { display: flex; flex-wrap: wrap; gap: 20px; }
+    .box { flex: 1 1 200px; padding: 20px; border: 1px solid gray; }
+
+    /* Exercise 3: footer */
+    .footer { background: #eee; padding: 20px; }
+    .footer-columns { display: flex; justify-content: space-between; gap: 20px; }
+    .footer-columns div { flex: 1; }
+    .copyright { text-align: center; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Exercise 1: Navigation Bar</h2>
+  <nav class="navbar">
+    <div>Logo</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+  </nav>
+
+  <h2>Exercise 2: Card Row</h2>
+  <div class="card-row">
+    <div class="box"><h3>Card 1</h3><p>Short text.</p></div>
+    <div class="box"><h3>Card 2</h3><p>This card has more text, so the other cards stretch to match its height.</p></div>
+    <div class="box"><h3>Card 3</h3><p>Medium length text here.</p></div>
+  </div>
+
+  <h2>Exercise 3: Footer</h2>
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>About Column</div>
+      <div>Links Column</div>
+      <div>Contact Column</div>
+    </div>
+    <p class="copyright">&copy; 2026 Faith Mutisya</p>
+  </footer>
+</body>
+</html>
