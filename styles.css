@@ -172,3 +172,24 @@ img { max-width: 100%; height: auto; }
 @media (min-width: 1024px) {
     .hero { grid-template-columns: 1fr 1fr; }
 }
+
+/* Task 4.4: Polish */
+a, button, .projects-grid section {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects-grid section:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+a:focus, button:focus, .menu-button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+html { overflow-x: hidden; }
