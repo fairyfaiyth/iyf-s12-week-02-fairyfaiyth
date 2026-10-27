@@ -76,6 +76,22 @@
       font-size: clamp(1rem, 2.5vw, 1.5rem);
       margin-bottom: 20px;
     }
+  
+    /* Day 4: Form styling */
+    .contact-form { max-width: 480px; display: flex; flex-direction: column; gap: 15px; }
+    .contact-form label { font-weight: 600; display: block; margin-bottom: 5px; }
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 12px; font-size: var(--font-base);
+      border: 2px solid var(--color-muted); border-radius: 4px; background: white;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      outline: none; border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(34, 139, 34, 0.25);
+    }
+    .contact-form input:not(:placeholder-shown):invalid,
+    .contact-form textarea:not(:placeholder-shown):invalid { border-color: #d32f2f; }
+    .contact-form .btn { width: 100%; }
   </style>
 </head>
 <body>
@@ -103,6 +119,20 @@
         <button class="btn btn-primary">Learn More</button>
       </div>
     </article>
+  </section>
+
+  
+  <section>
+    <h2>Day 4: Form Styling</h2>
+    <form class="contact-form">
+      <div><label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required minlength="2"></div>
+      <div><label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required></div>
+      <div><label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Your message" required minlength="10"></textarea></div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
   </section>
 
   <section class="hero-section">
