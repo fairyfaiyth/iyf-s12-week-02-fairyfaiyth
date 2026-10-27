@@ -53,6 +53,29 @@
       border-radius: 12px;
       font-size: var(--font-sm);
     }
+  
+    /* Day 3: Hero section */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("https://placehold.co/1600x900") center / cover no-repeat;
+    }
+    .hero-section h2 {
+      color: white;
+      font-size: clamp(1.875rem, 6vw, 3.5rem);
+    }
+    .hero-section p {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
@@ -80,6 +103,12 @@
         <button class="btn btn-primary">Learn More</button>
       </div>
     </article>
+  </section>
+
+  <section class="hero-section">
+    <h2>Day 3: Hero Section</h2>
+    <p>A full-screen hero with an image, overlay and centered text.</p>
+    <button class="btn btn-primary">Get Started</button>
   </section>
 </body>
 </html>
