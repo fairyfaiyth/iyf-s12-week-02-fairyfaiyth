@@ -7,8 +7,8 @@
 
 /* 2. Set base typography */
 body {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-family: var(--font-body);
+    font-size: var(--font-base);
     line-height: 1.6;
     color:black;
 }
@@ -57,9 +57,32 @@ footer {
 
 
 /* Heading sizes */
-h1 { font-size: 2.25rem; }
-h2 { font-size: 1.875rem; }
-h3 { font-size: 1.5rem; }
+h1 { font-size: var(--font-4xl); }
+h2 { font-size: var(--font-3xl); }
+h3 { font-size: var(--font-2xl); }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1.125rem; }
 h6 { font-size: 1rem; }
+
+/* Task 3.3: Typography system */
+:root {
+    --font-heading: "Poppins", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem;
+    --font-4xl: 2.25rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+small {
+    font-size: var(--font-sm);
+}
