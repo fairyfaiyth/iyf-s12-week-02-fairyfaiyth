@@ -27,21 +27,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Task 3.3: Custom Properties & Selectors */
 :root {
-    --primary-color: forestgreen;
-    --text-color: black;
-    --background-color: honeydew;
+    --color-primary: forestgreen;
+    --color-text: black;
+    --color-background: honeydew;
 }
 
 /* Pseudo-class selection rule */
 nav ul li a:hover {
-    color: var(--primary-color);
+    color: var(--color-primary);
     text-decoration: underline;
 }
 /* Task 3.4: Semantic Layout Elements */
 header {
-    background-color: var(--background-color);
+    background-color: var(--color-background);
     padding: 20px;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--color-primary);
 }
 
 nav ul {
@@ -85,4 +85,49 @@ h1, h2, h3, h4, h5, h6 {
 
 small {
     font-size: var(--font-sm);
+}
+
+/* Task 3.4: Color scheme */
+:root {
+    --color-secondary: #e9a23b;
+    --color-muted: #6b7280;
+    --color-primary-light: #4caf50;
+    --color-primary-dark: #145a14;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary-dark);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+small {
+    color: var(--color-muted);
+}
+
+footer {
+    border-top: 3px solid var(--color-secondary);
 }
