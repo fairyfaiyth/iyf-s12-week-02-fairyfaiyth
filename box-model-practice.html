@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Practice</title>
+  <style>
+    /* Exercise 1: one box per part of the box model */
+    .content-box {
+      width: 200px;
+      background-color: lightgreen;
+    }
+    .padding-box {
+      width: 200px;
+      padding: 30px;
+      background-color: lightblue;
+    }
+    .border-box {
+      width: 200px;
+      border: 5px solid darkgreen;
+    }
+    .margin-box {
+      width: 200px;
+      margin: 40px;
+      background-color: khaki;
+    }
+
+    /* Exercise 2: fixed box, total width is 300px */
+    .broken-box {
+      box-sizing: border-box;
+      width: 300px;
+      padding: 20px;
+      border: none;
+      background-color: lightpink;
+    }
+  </style>
+</head>
+<body>
+  <h1>Box Model Practice</h1>
+
+  <h2>Exercise 1: Box Model</h2>
+  <div class="content-box">Content (background color)</div>
+  <div class="padding-box">Padding (bigger area inside)</div>
+  <div class="border-box">Border (visible border)</div>
+  <div class="margin-box">Margin (space around the box)</div>
+
+  <h2>Exercise 2: Fixed Layout</h2>
+  <div class="broken-box">I am exactly 300px wide.</div>
+</body>
+</html>
