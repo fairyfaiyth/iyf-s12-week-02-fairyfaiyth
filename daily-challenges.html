@@ -92,6 +92,18 @@
     .contact-form input:not(:placeholder-shown):invalid,
     .contact-form textarea:not(:placeholder-shown):invalid { border-color: #d32f2f; }
     .contact-form .btn { width: 100%; }
+  
+    /* Day 5: Footer design (mobile first) */
+    .site-footer { background: var(--color-primary-dark); color: white; text-align: left; margin-top: 0; padding: 40px 20px 20px; border-top: none; }
+    .footer-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+    .site-footer h3 { color: white; font-size: var(--font-lg); margin-bottom: 10px; }
+    .site-footer ul { list-style: none; }
+    .site-footer li { margin-bottom: 8px; }
+    .site-footer a { color: white; text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+    .footer-copy { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.3); font-size: var(--font-sm); }
+    @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
   </style>
 </head>
 <body>
@@ -140,5 +152,38 @@
     <p>A full-screen hero with an image, overlay and centered text.</p>
     <button class="btn btn-primary">Get Started</button>
   </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>About</h3>
+        <p>Faith Mutisya is learning web development and building a portfolio.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="contact.html">Contact page</a></li>
+          <li><a href="mailto:faiythmutisya@gmail.com">Email me</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="https://github.com/fairyfaiyth">&#128025; GitHub</a></li>
+          <li><a href="#">&#128188; LinkedIn</a></li>
+          <li><a href="#">&#128038; Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Faith Mutisya Portfolio</p>
+  </footer>
 </body>
 </html>
