@@ -131,3 +131,37 @@ small {
 footer {
     border-top: 3px solid var(--color-secondary);
 }
+
+/* Task 4.3: Mobile-first responsive design */
+img { max-width: 100%; height: auto; }
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo { font-weight: 700; font-size: var(--font-xl); text-decoration: none; }
+.menu-toggle { display: none; }
+.menu-button { font-size: 1.75rem; cursor: pointer; }
+.site-header nav { display: none; width: 100%; }
+.menu-toggle:checked ~ nav { display: block; }
+.site-header nav ul { list-style: none; }
+.site-header nav li a { display: block; padding: 10px 0; text-decoration: none; }
+
+.projects-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.projects-grid section { border: 1px solid var(--color-muted); padding: 20px; }
+
+/* Tablet */
+@media (min-width: 768px) {
+    .menu-button { display: none; }
+    .site-header nav { display: block; width: auto; }
+    .site-header nav ul { display: flex; gap: 20px; }
+    .site-header nav li a { padding: 0; }
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .projects-grid { grid-template-columns: repeat(3, 1fr); }
+}
