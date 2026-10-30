@@ -229,3 +229,5 @@ form input[type="submit"]:hover, form button[type="submit"]:hover {
     background: var(--color-primary-dark);
 }
 form input[type="radio"], form input[type="checkbox"] { width: auto; }
+
+main { padding: 20px; }
