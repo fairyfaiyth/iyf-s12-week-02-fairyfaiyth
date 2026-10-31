@@ -27,3 +27,7 @@ https://fairyfaiyth.github.io/iyf-s12-week-02-fairyfaiyth/
 
 ## Author
 Faith Mutisya (fairyfaiyth)
+
+## Games completed
+- Flexbox Froggy: 24 of 24 levels (`proof/flexbox-froggy-win.jpg`)
+- Grid Garden: 28 of 28 levels (`proof/grid-garden-win.jpg`)
