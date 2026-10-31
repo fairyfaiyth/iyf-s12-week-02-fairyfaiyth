@@ -31,3 +31,6 @@ Faith Mutisya (fairyfaiyth)
 ## Games completed
 - Flexbox Froggy: 24 of 24 levels (`proof/flexbox-froggy-win.jpg`)
 - Grid Garden: 28 of 28 levels (`proof/grid-garden-win.jpg`)
+
+## Technical Article
+https://dev.to/fairyfaiyth/semantic-html-and-accessibility-what-i-learned-4joi
